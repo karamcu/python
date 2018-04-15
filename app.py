@@ -1,6 +1,5 @@
-import os
-import sys
-if __name__ == "__main__":
-  os.environ.setdefault("DJANGO_SETTINGS_MODULE", "myproject.setting")
-  from django.core.management import execute_from_command_line
-  execute_from_command_line(sys.argv)
+from django.http import HttpResponse
+
+def hello(request):
+   text = """<h1>welcome to my app !</h1>"""
+   return HttpResponse(text)
