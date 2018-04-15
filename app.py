@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from django.http import HttpResponse
 
 def hello(request):
