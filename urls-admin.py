@@ -1,4 +1,4 @@
-"""myproject URL Configuration
+""myproject URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.8/topics/http/urls/
@@ -19,5 +19,5 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^myapp/', include('myapp.urls')),
+    url(r'^$/', include('urls')),
 )
