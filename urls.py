@@ -19,8 +19,8 @@ from django.conf.urls import patterns, include, url
 
 urlpatterns = patterns('',
  #   url(r'^admin/', include(admin.site.urls)),
-    url(r'^hello/', 'myapp.views.hello', name = 'hello'),
-    url(r'^morning/','myapp.views.morning', name = 'morning'),
-    url(r'^article/(\d+)/','myapp.views.viewArticle', name = 'viewArticle'),
-    url(r'^evening/(\d{2})/(\d{4})', 'myapp.views.evening', name ='evening'),
+    url(r'^hello/', 'views.hello', name = 'hello'),
+    url(r'^morning/','views.morning', name = 'morning'),
+    url(r'^article/(\d+)/','views.viewArticle', name = 'viewArticle'),
+    url(r'^evening/(\d{2})/(\d{4})', 'views.evening', name ='evening'),
 )
